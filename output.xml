@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220523 11:43:55.123" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="C:\Users\ASUS\PycharmProjects\WebAutomation\Automation\test.robot">
+<test id="s1-t1" name="Start Automation" line="12">
+<kw name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220523 11:43:55.373" level="INFO">Opening browser 'Chrome' to base url 'https://www.bookdepository.com/'.</msg>
+<status status="PASS" starttime="20220523 11:43:55.372" endtime="20220523 11:43:58.749"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220523 11:43:58.749" endtime="20220523 11:43:58.941"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220523 11:44:00.955" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220523 11:43:58.941" endtime="20220523 11:44:00.955"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//body/div[2]/div[1]/div[1]/ul[2]/li[3]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220523 11:44:00.956" level="INFO">Clicking element 'xpath=//body/div[2]/div[1]/div[1]/ul[2]/li[3]/a[1]'.</msg>
+<status status="PASS" starttime="20220523 11:44:00.955" endtime="20220523 11:44:03.210"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath=//body/div[2]/div[5]/div[1]/div[1]/div[1]/div[1]/iframe[1]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20220523 11:44:03.211" level="INFO">Selecting frame 'xpath=//body/div[2]/div[5]/div[1]/div[1]/div[1]/div[1]/iframe[1]'.</msg>
+<status status="PASS" starttime="20220523 11:44:03.210" endtime="20220523 11:44:03.279"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>ap_email</arg>
+<arg>mahirajogja@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220523 11:44:03.279" level="INFO">Typing text 'mahirajogja@gmail.com' into text field 'ap_email'.</msg>
+<status status="PASS" starttime="20220523 11:44:03.279" endtime="20220523 11:44:03.541"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>ap_password</arg>
+<arg>Jogja123%</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220523 11:44:03.541" level="INFO">Typing text 'Jogja123%' into text field 'ap_password'.</msg>
+<status status="PASS" starttime="20220523 11:44:03.541" endtime="20220523 11:44:03.650"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>signInSubmit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220523 11:44:03.650" level="INFO">Clicking element 'signInSubmit'.</msg>
+<status status="PASS" starttime="20220523 11:44:03.650" endtime="20220523 11:44:04.257"/>
+</kw>
+<status status="PASS" starttime="20220523 11:43:55.372" endtime="20220523 11:44:04.258"/>
+</kw>
+<kw name="Book Basket">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//body/div[2]/div[4]/div[1]/ul[1]/li[2]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220523 11:44:04.259" level="INFO">Clicking element 'xpath=//body/div[2]/div[4]/div[1]/ul[1]/li[2]/a[1]'.</msg>
+<status status="PASS" starttime="20220523 11:44:04.259" endtime="20220523 11:44:07.642"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//body/div[2]/div[5]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220523 11:44:07.643" level="INFO">Clicking element 'xpath=//body/div[2]/div[5]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20220523 11:44:07.642" endtime="20220523 11:44:07.753"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Continue Shopping')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220523 11:44:07.753" endtime="20220523 11:44:08.492"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220523 11:44:11.503" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220523 11:44:08.492" endtime="20220523 11:44:11.503"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Continue Shopping')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220523 11:44:11.503" level="INFO">Clicking element 'xpath=//a[contains(text(),'Continue Shopping')]'.</msg>
+<status status="PASS" starttime="20220523 11:44:11.503" endtime="20220523 11:44:11.546"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220523 11:44:14.559" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220523 11:44:11.546" endtime="20220523 11:44:14.559"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//body/div[2]/div[5]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[3]/div[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220523 11:44:14.561" level="INFO">Clicking element 'xpath=//body/div[2]/div[5]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[3]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20220523 11:44:14.560" endtime="20220523 11:44:14.655"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Continue Shopping')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220523 11:44:14.656" endtime="20220523 11:44:15.345"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220523 11:44:18.359" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220523 11:44:15.346" endtime="20220523 11:44:18.360"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Continue Shopping')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220523 11:44:18.361" level="INFO">Clicking element 'xpath=//a[contains(text(),'Continue Shopping')]'.</msg>
+<status status="PASS" starttime="20220523 11:44:18.360" endtime="20220523 11:44:18.430"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220523 11:44:21.440" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220523 11:44:18.430" endtime="20220523 11:44:21.440"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//body/div[2]/div[4]/div[1]/div[1]/div[3]/a[1]/i[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220523 11:44:21.442" level="INFO">Clicking element 'xpath=//body/div[2]/div[4]/div[1]/div[1]/div[3]/a[1]/i[1]'.</msg>
+<status status="PASS" starttime="20220523 11:44:21.441" endtime="20220523 11:44:23.156"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220523 11:44:23.157" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+300)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220523 11:44:23.156" endtime="20220523 11:44:23.191"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath=//select[@id='Qty_0']</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220523 11:44:23.192" level="INFO">Selecting options from selection list 'xpath=//select[@id='Qty_0']' by value 2.</msg>
+<status status="PASS" starttime="20220523 11:44:23.191" endtime="20220523 11:44:25.336"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220523 11:44:28.351" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220523 11:44:25.336" endtime="20220523 11:44:28.351"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath=//select[@id='Qty_1']</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220523 11:44:28.354" level="INFO">Selecting options from selection list 'xpath=//select[@id='Qty_1']' by value 3.</msg>
+<status status="PASS" starttime="20220523 11:44:28.352" endtime="20220523 11:44:30.196"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220523 11:44:33.201" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220523 11:44:30.196" endtime="20220523 11:44:33.201"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+400)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220523 11:44:33.203" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+400)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220523 11:44:33.201" endtime="20220523 11:44:33.230"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220523 11:44:36.243" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220523 11:44:33.230" endtime="20220523 11:44:36.244"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//body/div[2]/div[5]/div[1]/div[2]/div[3]/div[2]/form[2]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220523 11:44:36.245" level="INFO">Clicking element 'xpath=//body/div[2]/div[5]/div[1]/div[2]/div[3]/div[2]/form[2]/button[1]'.</msg>
+<status status="PASS" starttime="20220523 11:44:36.244" endtime="20220523 11:44:37.893"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220523 11:44:40.905" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220523 11:44:37.893" endtime="20220523 11:44:40.905"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+400)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220523 11:44:40.906" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+400)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220523 11:44:40.905" endtime="20220523 11:44:40.934"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220523 11:44:43.949" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220523 11:44:40.934" endtime="20220523 11:44:43.949"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220523 11:44:43.949" endtime="20220523 11:44:46.095"/>
+</kw>
+<status status="PASS" starttime="20220523 11:44:04.258" endtime="20220523 11:44:46.096"/>
+</kw>
+<status status="PASS" starttime="20220523 11:43:55.371" endtime="20220523 11:44:46.097"/>
+</test>
+<status status="PASS" starttime="20220523 11:43:55.125" endtime="20220523 11:44:46.100"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
